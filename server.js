@@ -94,7 +94,7 @@ async function bootServer() {
       // Turn these back on in later labs
       // const mysql = await db.sequelizeDB;
       // await mysql.sync();
-      console.log(`Listening on: http//localhost:${PORT}`);
+      console.log(`Listening on http://localhost:${PORT}`);
       console.log('environment:', process.env.CONTEXT);
     });
   } catch (err) { // Catch and show us the error in our terminal or application logs
