@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     let currentPosition = 4
-    let current = theTetrominoes[0][]
+    let current = theTetrominoes[0]
 
 
 
