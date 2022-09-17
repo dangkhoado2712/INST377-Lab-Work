@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // draw the first rotation in the first tetromino
     function draw() {
         current.forEach(index => {
-            squares[currentPosition + index].classList.add('.tetromino')
+            squares[currentPosition + index].classList.add('tetromino')
         })
     }
 
