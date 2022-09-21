@@ -5,7 +5,6 @@
   This file contains parts of a simple script to make your carousel work.
   Please feel free to edit away - the main version of this with all the notes is safely stored elsewhere
 */
-document.addEventListener('DOMContentLoaded', () => {
 /* eslint-enable max-len */
 // set our first slide's position to "0", the opening position in an array
 const slidePosition = 0;
@@ -30,10 +29,10 @@ function updateSlidePosition() {
   slidesArray.forEach(item => {
     item.classList.remove('visible');
     item.classList.add('hidden');
-    slidePosition +=1;
+    slidePosition +=1
   })
 
-  slidesArray[slidePosition-1].classList.add('visible')
+  slidesArray[slidePosition].classList.add('visible');
 }
 
 function moveToNextSlide() {
@@ -43,7 +42,7 @@ function moveToNextSlide() {
     and if so, sets your slidePosition to the first index of an array
     if not, set the slidePosition to the current position plus one
   */
-  if(slidePosition == totalSlides) {
+  if(slidePosition == totalSlides -1) {
     slidePosition = 0;
   } else {
     slidePosition +=1;
@@ -59,7 +58,7 @@ function moveToPrevSlide() {
     if not, set the slidePosition to the current position minus one
   */
   if (slidePosition = 0) {
-    slidePosition = totalSlides;
+    slidePosition = totalSlides -1;
   } else {
     slidePosition -=1;
   }
@@ -81,4 +80,3 @@ document.querySelector('.prev')
     console.log('clicked prev');
     moveToPrevSlide();
   });
-})
