@@ -9,7 +9,7 @@
   <head>
     <title></title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
+    
   </head>
   <body>
     <div class="wrapper">
@@ -30,16 +30,16 @@
             </div>
             <div class="right_section box">
                 <h2 class="subtitle">Image Carousel</h2>
-                    <div class="grid">
-                        <button class="prev">prev</button>
-                        <div class="carousel slides">
-                                <img class="carousel_item visible" src="images/mochi.gif" />
-                                <img class="carousel_item visible" src="images/mochi.jpg" />
-                                <img class="carousel_item visible" src="images/mochi.png" />
-                                <img class="carousel_item visible" src="images/mochi.svg" />
-                        </div>
-                        <button class="next">next</button>
+                <div class="carousel">
+                    <button class="prev">prev</button>
+                    <div class="slides">
+                        <div class="carousel_item visible"><img  src="images/mochi.gif" /></div>
+                        <div class="carousel_item hidden"><img  src="images/mochi.jpg" /></div>
+                        <div class="carousel_item hidden"><img  src="images/mochi.png" /></div>
+                        <div class="carousel_item hidden"><img  src="images/mochi.svg" /></div>
                     </div>
+                    <button class="next">next</button>
+                </div>
                     <div class="box">
                         <p>All square carousel</p>
                     </div>
@@ -47,6 +47,6 @@
         </div>
     </div>
     <p class="footer">DANGKHOADO2712 <a href="https://github.com/dangkhoado2712/INST377-Lab-Work" target="_blank">Github account</a></p>
-    
+    <script src="script.js"></script>
   </body>
 </html>
