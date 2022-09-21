@@ -33,7 +33,7 @@ function updateSlidePosition() {
     slidePosition +=1;
   })
 
-  slidesArray[slidePosition].classList.add('visible')
+  slidesArray[slidePosition-1].classList.add('visible')
 }
 
 function moveToNextSlide() {
@@ -43,7 +43,7 @@ function moveToNextSlide() {
     and if so, sets your slidePosition to the first index of an array
     if not, set the slidePosition to the current position plus one
   */
-  if(slidePosition == (totalSlides -1) ) {
+  if(slidePosition == totalSlides) {
     slidePosition = 0;
   } else {
     slidePosition +=1;
