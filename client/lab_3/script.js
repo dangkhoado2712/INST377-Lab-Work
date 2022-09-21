@@ -5,6 +5,7 @@
   This file contains parts of a simple script to make your carousel work.
   Please feel free to edit away - the main version of this with all the notes is safely stored elsewhere
 */
+document.addEventListener('DOMContentLoaded', () => {
 /* eslint-enable max-len */
 // set our first slide's position to "0", the opening position in an array
 const slidePosition = 0;
@@ -63,3 +64,4 @@ document.querySelector('.prev')
     console.log('clicked prev');
     moveToPrevSlide();
   });
+})
