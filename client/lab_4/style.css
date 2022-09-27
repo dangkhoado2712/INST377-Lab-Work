@@ -311,4 +311,23 @@ form label {
       justify-content: center;
       align-items: center;
     }
+
+    .left_section {
+      display: flex;
+      flex-direction: column;
+      width: -webkit-fill-available;
+    }
+
+    .right_section {
+      align-items: flex-start;
+      width: -webkit-fill-available;
+    }
+
+    .form {
+      width: -webkit-fill-available;
+    }
+
+    .restaurant_list {
+      width: -webkit-fill-available;
+    }
 }
