@@ -1,0 +1,38 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dang Khoa Do's Labs for INST377</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>Dang Khoa Do's Labs For INST377</h1>
+      </header>
+      <div class="container">
+        <div class="left_section box">
+            <h2>Form Input</h2>
+            <form class="form box main_form" action="/api">
+                <div>
+                    <label for="resto">Restaurant Name</label>
+                    <input type="text" name="resto" id="resto" />
+                </div>
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                <button type="submit" id="get-resto">Submit</button>
+            </form>
+        </div>
+        <div class="right_section box">
+          <h2>Local Restaurant</h2>
+          <div class="box" id="restaurant_list">A list of local restaurants</div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>DANGKHOADO2712 <a href="https://github.com/dangkhoado2712/INST377-Lab-Work" target="_blank">Github account</a></p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
